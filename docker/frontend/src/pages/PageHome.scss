@@ -1,0 +1,113 @@
+
+.headerPage {
+	background: none;
+}
+
+.subTitleHome {
+	font-size: 2em;
+
+	font-family: "typewrite", sans-serif;
+	overflow: hidden;
+
+	margin-top: 0px;
+	margin-bottom: 15px;
+	height: 1.8em;
+	text-align: center;
+
+	animation: breaker 4s ease-in-out infinite;
+}
+
+@keyframes blinkAnim {
+	0% { color: transparent }
+	50% { color: transparent }
+	51% { color: black }
+}
+
+.blinkContainer {
+	display: block;
+	border: solid 3px rgb(215, 215, 215);
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: max-content;
+	padding: 0px 10px;
+	color: rgb(215, 215, 215) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blinkLine {
+	animation: blink 1s infinite;
+	font-size: 2em;
+	font-family: "typewrite", sans-serif;
+}
+
+
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.homeText {
+	width: 100%;
+
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+
+	background: #ffffff04 !important;
+	backdrop-filter: blur(3px);
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 10px;
+	padding-bottom: 1px;
+}
+
+.homePara {
+	background: #ffffff11 !important;
+	border: 3px solid #ffffff11 !important;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	font-family: "typewrite", sans-serif;
+}
+
+.homeTitle {
+	font-size: 1.5em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	text-align: left;
+	padding-left: 15px;
+}

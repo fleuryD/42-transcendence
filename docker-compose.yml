@@ -1,0 +1,46 @@
+version: "3"
+services:
+        postgres:
+                build: docker/postgreSQL
+                container_name: postgres
+                environment:
+                        - POSTGRES_USER=${ENV_POSTGRES_USER}
+                        - POSTGRES_PASSWORD=${ENV_POSTGRES_PASSWORD}
+                        - POSTGRES_DB=${ENV_POSTGRES_DB}
+                        - POSTGRES_HOST_AUTH_METHOD=trust
+                restart: always
+                networks:
+                        - best_network
+                ports:
+                  - 5432:5432
+        frontend:
+                build: docker/frontend
+                container_name: frontend
+                restart: always
+                ports:
+                        - 3001:3001
+                networks:
+                        - best_network
+                depends_on:
+                        - backend
+                volumes:
+                        - ./docker/frontend:/app
+                        - /app/node_modules
+        backend:
+                build: docker/backend
+                container_name: backend
+                ports:
+                        - 3000:3000
+                restart: always
+                networks:
+                        - best_network
+                depends_on:
+                        - postgres
+                links:
+                        - postgres
+                volumes:
+                        - ./docker/backend:/app
+                        - /app/node_modules
+networks:
+  best_network:
+    driver: bridge

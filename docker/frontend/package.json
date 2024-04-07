@@ -1,0 +1,71 @@
+{
+	"name": "front_df",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.5",
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^27.5.2",
+		"@types/node": "^16.18.41",
+		"@types/react": "^18.2.20",
+		"@types/react-bootstrap": "^0.32.32",
+		"@types/react-dom": "^18.2.7",
+		"@types/react-router-bootstrap": "^0.26.2",
+		"@types/react-router-dom": "^5.3.3",
+		"@types/styled-components": "^5.1.26",
+		"axios": "^1.5.0",
+		"bootstrap": "^5.3.1",
+		"microseconds": "^0.2.0",
+		"react": "^18.2.0",
+		"react-avatar-edit": "^1.2.0",
+		"react-bootstrap": "^2.8.0",
+		"react-dom": "^18.2.0",
+		"react-dotenv": "^0.1.3",
+		"react-game-engine": "^1.2.0",
+		"react-icons": "^4.10.1",
+		"react-redux": "^8.1.2",
+		"react-router-bootstrap": "^0.26.2",
+		"react-router-dom": "^6.15.0",
+		"react-scripts": "5.0.1",
+		"sass": "^1.66.1",
+		"socket.io-client": "^4.7.2",
+		"styled-components": "^6.0.7",
+		"styled-system": "^5.1.5",
+		"typescript": "^4.9.5",
+		"web-vitals": "^2.1.4"
+	},
+	"scripts": {
+		"start": "set PORT=3001 && PORT=3001 react-scripts start --max-http-header-size=64555",
+		"build": "react-scripts build --max-http-header-size=64555",
+		"test": "react-scripts test --max-http-header-size=64555",
+		"eject": "react-scripts eject --max-http-header-size=64555"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"proxy": "http://localhost:3001",
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/jquery": "^3.5.18",
+		"@types/microseconds": "^0.2.0",
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^9.0.0",
+		"prettier": "^3.0.2"
+	}
+}

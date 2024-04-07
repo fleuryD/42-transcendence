@@ -1,0 +1,103 @@
+.Login {
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+
+	height: 300px;
+	width: 400px;
+	max-width: 90vw;
+
+	font-family: "customFont1", sans-serif;
+}
+
+.Login input {
+	width: calc(100%);
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+
+	background-color: #ffffff33;
+	color: #ffffff;
+	transform: scale(1);
+	cursor: pointer;
+	transition: all 0.05s ease-out;
+
+	box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.25);
+	font-family: "customFont1", sans-serif;
+	backdrop-filter: blur(3px);
+}
+
+.Login input:hover {
+	transform: scale(1.03);
+	background-color: #ffffff66;
+}
+
+.Login h1 {
+	font-size: 40px;
+	color: white;
+	margin-bottom: 5px;
+
+	text-align: center;
+	background: linear-gradient(0deg, white, rgb(163, 163, 163), white);
+	-webkit-background-clip: text; /* Utilisation de la propriété background-clip avec le préfixe Webkit pour une meilleure compatibilité */
+	background-clip: text;
+	color: transparent;
+}
+
+.Login h5 {
+	color: white;
+}
+
+.Login button {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	background-color: #ffffff33;
+	color: #ffffff;
+
+	margin-bottom: 10px;
+
+	transform: scale(1);
+	transition: all 0.05s ease-out;
+
+	box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.15);
+	font-family: "customFont1", sans-serif;
+	backdrop-filter: blur(3px);
+}
+
+.Login button:enabled {
+	cursor: pointer;
+}
+
+.Login button:enabled:hover {
+	transform: scale(1.03);
+
+	background-color: #ffffff66;
+}
+
+.Login button:disabled {
+	opacity: 0.5;
+}
+
+.debug button {
+	width: 40%;
+	margin: 3px 5%;
+	height: 40px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	background-color: #ffffff44;
+
+
+	transform: scale(1);
+	transition: all 0.1s ease-out;
+
+	box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.25);
+	font-family: "customFont1", sans-serif;
+}
+

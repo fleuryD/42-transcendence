@@ -1,0 +1,51 @@
+.joinHeader {
+	padding: 5px 10px;
+
+	color: #ffffff;
+
+	font-size: 1.2em;
+	font-family: "customFont1", sans-serif;
+
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.cadreJoinTitle {
+	font-size: 20px;
+}
+
+.cadreContent {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.cadreContent > div {
+	margin: 10px 0px;
+}
+
+.cadreJoin button {
+	border: 1px solid black;
+	padding: 5px 30px;
+	margin: 10px 10px;
+
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+
+	background-color: #ddddff11;
+	color: #ffffff;
+
+	box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.25);
+	font-family: "customFont1", sans-serif;
+	backdrop-filter: blur(3px);
+	transform: scale(1);
+
+	transition: all 0.05s ease;
+}
+
+.cadreJoin button:hover {
+	background-color: #ddddff22;
+	transform: scale(1.1);
+}
